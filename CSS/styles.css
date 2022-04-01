@@ -1,0 +1,56 @@
+/* #para-one, #para-three {
+    color: red;
+} */
+
+body {
+    background: linear-gradient(to bottom, rgba(110, 204, 112, 1), rgba(110, 204, 112, 0.4));
+}
+
+.demo-class {
+    color: red;
+}
+
+h1:hover {
+    color: purple;
+}
+
+.list-one:first-child {
+    color: green;
+}
+
+.list-one:last-child {
+    color: yellow;
+}
+
+.list-one:nth-child(3) {
+    color: blue;
+}
+
+#google-link:visited, #page-two:visited, #documentation:visited {
+    color: grey;
+}
+
+/* Attribute Selectors */
+
+img[src^="https://"] {
+    border: 10px solid black;
+}
+
+img[src$=".jpeg"] {
+    border: 10px solid blue;
+}
+
+img[src*="image"] {
+    border: 10px brown;
+}
+
+/* COLORS */
+h1 {
+    color: rgb(57, 63, 230);
+}
+
+#container-one {
+    width: 70%;
+    height: 400px;
+    background: rgba(56, 214, 59, 0.3)
+}
