@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 /* #para-one, #para-three {
     color: red;
 } */
 
 body {
-    background: linear-gradient(to bottom, rgba(110, 204, 112, 1), rgba(110, 204, 112, 0.4));
+    /* background: linear-gradient(to bottom, rgba(110, 204, 112, 1), rgba(110, 204, 112, 0.4)); */
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-weight: 100;
+}
+
+h1 {
+    font-weight: 900;
 }
 
 .demo-class {
@@ -53,4 +62,47 @@ h1 {
     width: 70%;
     height: 400px;
     background: rgba(56, 214, 59, 0.3)
+}
+
+p {
+    /* font-size: 1cm; */
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+h1 {
+    /* border: 10px solid black; */
+    border: 5px double red;
+
+    /* padding: 20px; */
+    /* padding: 5px 10px; */
+    padding: 5px 10px 15px 20px;
+
+    margin: 10px;
+}
+
+
+#img-one {
+    width: 80%;
+    border: 10px double navy;
+    /* border-radius: 10px; */
+    border-radius: 50%;
+
+    margin-left: 10px;
+}
+
+/* FLEXBOXES */
+#container {
+    display: flex;
+    /* flex-direction: column; */
+    width: 30%;
+    flex-wrap: wrap;
+}
+
+.container-items {
+    background-color: blue;
+    width: 25px;
+    color: white;
+    padding-left: 10px;
+    margin: 5px;
 }
