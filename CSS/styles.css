@@ -9,6 +9,11 @@ body {
     font-family: 'Roboto', sans-serif;
     /* font-family: 'Open Sans', sans-serif; */
     font-weight: 100;
+    font-size: 0.7em;
+}
+
+img {
+    width: 70vw;
 }
 
 h1 {
@@ -61,7 +66,13 @@ h1 {
 #container-one {
     width: 70%;
     height: 400px;
-    background: rgba(56, 214, 59, 0.3)
+    background: linear-gradient(to right, green, red, blue, orange, yellow);
+}
+
+#container-two {
+    width: 70%;
+    height: 400px;
+    background: radial-gradient(circle, green, red 50%, blue, orange, yellow);
 }
 
 p {
@@ -105,4 +116,38 @@ h1 {
     color: white;
     padding-left: 10px;
     margin: 5px;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo {
+    height: 90px;
+    width: 15vw;
+}
+
+#nav-links {
+    display: flex;
+    list-style: none;
+
+    justify-content: space-around;
+}
+
+#nav-links li a {
+    text-decoration: none;
+    color: black;
+
+    margin-right: 20px;
+}
+
+#nav-links li {
+    line-height: 60px;
+}
+
+#nav-button {
+    height: 25px;
+    line-height: 20px;
 }
