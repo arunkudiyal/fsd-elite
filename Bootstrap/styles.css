@@ -1,0 +1,23 @@
+#btn-one:hover {
+    padding: 1.5em;
+}
+
+.lead {
+    float: right;
+}
+
+#my-form {
+    border: 2px solid grey;
+    padding: 20px;
+    margin: 15px;
+    width: 65vw;
+}
+
+/* #grid-one {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-md-6 {
+    width: 100%;
+} */

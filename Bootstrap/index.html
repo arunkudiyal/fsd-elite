@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./styles.css">
+    <title>Bootstrap Cheatsheet</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="page-header">Welcome to BS! <small>By : Arun Kudiyal</small> </h1>
+    </div>
+
+    <div class="container">
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cupiditate ex iure, aspernatur blanditiis corrupti possimus voluptatibus aut laudantium dolore? Necessitatibus incidunt deleniti suscipit. Quae!</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ipsam quidem modi sapiente labore illo, corporis dignissimos totam. Dolorem, minima vel, dolore impedit dignissimos cumque aliquid libero sint dolores incidunt atque ullam beatae voluptas obcaecati adipisci. Inventore dignissimos natus quidem.</p>
+
+        <hr>
+        <h3>Texts & Alignments : </h3>
+        <p class="text-left">Text Left</p>
+        <p class="text-center">Text Center</p>
+        <p class="text-right">Text Right</p>
+
+        <hr>
+
+        <p class="text-primary">Contextual Class - 1 (PRIMARY)</p>
+        <p class="text-success">Contextual Class - 2 (SUCCESS)</p>
+        <p class="text-danger">Contextual Class - 3 (DANGER)</p>
+        <p class="text-info">Contextual Class - 4 (INFO) </p>
+        <p class="text-warning">Contextual Class - 5 (WARNING)</p>
+        <p class="text-muted">Contextual Class - 6 (MUTED)</p>
+
+        <hr>
+
+        <p class="bg-primary">Contextual Class - 1 (PRIMARY)</p>
+        <p class="bg-success">Contextual Class - 2 (SUCCESS)</p>
+        <p class="bg-danger">Contextual Class - 3 (DANGER)</p>
+        <p class="bg-info">Contextual Class - 4 (INFO) </p>
+        <p class="bg-warning">Contextual Class - 5 (WARNING)</p>
+        <p class="bg-muted">Contextual Class - 6 (MUTED)</p>        
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>Buttons, Anchors & Links : </h3>
+
+        <button class="btn btn-success">Button</button>
+        <a class="btn btn-primary" href="#">Anchor</a>
+        
+        <br> <br>
+
+        <button id="btn-one" class="btn btn-primary btn-sm">Button - 1</button>
+        <button class="btn btn-success btn-lg">Button - 2</button>
+        <button class="btn btn-danger btn-xs">Button - 3</button>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>Tables : </h3>
+        <table class="table table-bordered table-hover table-striped table-condensed">
+            <thead>
+                <th>Emp Id</th>
+                <th>Emp Name</th>
+                <th>Emp Email</th>
+                <th>Emp Designation</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>EM00765</td>
+                    <td>John Doe</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>SDE - II</td>
+                </tr>
+                <tr>
+                    <td>EM00765</td>
+                    <td>Paul</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>SDE - III</td>
+                </tr>
+                <tr>
+                    <td>EM00765</td>
+                    <td>Logan Paul</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>Tester</td>
+                </tr>
+                <tr>
+                    <td>EM00765</td>
+                    <td>Ben Thomas</td>
+                    <td>john.doe@gmail.com</td>
+                    <td>Java Developer</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+    </div>
+
+    <hr>
+    <div class="container">
+        <h3>Lists : </h3>
+        <ol>
+            <li>List Item - 1</li>
+            <li>List Item - 2</li>
+            <li>List Item - 3</li>
+            <li>List Item - 4</li>
+            <li>List Item - 5</li>
+        </ol>
+
+        <ul class="list-unstyled">
+            <li>List Item - 1</li>
+            <li>List Item - 2</li>
+            <li>List Item - 3</li>
+            <li>List Item - 4</li>
+            <li>List Item - 5</li>
+        </ul>
+
+        <ul class="list-inline">
+            <li>List Item - 1</li>
+            <li>List Item - 2</li>
+            <li>List Item - 3</li>
+            <li>List Item - 4</li>
+            <li>List Item - 5</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>HTML Forms : </h3>
+        <form id="my-form" >
+            <div class="form-group">
+                <label>Full Name : </label>
+                <input class="form-control" type="text" placeholder="Enter you full name..." /> 
+            </div>
+
+            <div class="form-group">
+                <label>Email : </label>
+                <input class="form-control" type="email" placeholder="Enter you email..." />
+            </div> 
+
+            <div class="form-group">
+                <label>Password : </label>
+                <input class="form-control" type="password" placeholder="Enter you password..." />
+            </div> 
+
+            <div class="form-group">
+                <label>Gender : </label>
+                <select class="form-control">
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </select>
+            </div> 
+
+            <div class="form-group">
+                <label>DOB</label>
+                <input class="form-control" type="date">
+            </div> 
+
+            <div class="form-group">
+                <label>Upload your updated resume (in .pdf OR .doc OR .docs) : </label>
+                <input class="form-control" type="file" accept=".pdf, .doc, .docx" >
+            </div> 
+
+            <div class="form-group">
+                <label>How happy are you today ? </label>
+                <input class="form-control" type="range">
+            </div> 
+
+            <div class="form-group">
+                <label>Feedback : </label>
+                <textarea cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="form-group">
+                <input class="btn btn-success" id="btn1" type="submit" value="SUBMIT">
+            </div>
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>Progress Bars : </h3>
+        <div class="progress">
+            <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 50%;">50%</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h3>Bootstrap Grids : </h3>
+        <div>
+            <h4>6 x 6 Grid - </h4>
+            <div id="grid-one" class="row">
+                <div class="col-xs-6">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est explicabo animi aliquid architecto culpa, repellat nisi expedita eius perspiciatis incidunt quisquam molestiae magnam, minus quo saepe provident! Consequatur odio provident praesentium magnam natus quisquam ratione inventore quo saepe blanditiis labore enim earum corrupti quaerat quod, amet sit ipsum doloremque eaque deserunt quibusdam nulla. Numquam facere, quidem facilis atque culpa saepe.
+                </div>
+                <div class="col-xs-6">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est explicabo animi aliquid architecto culpa, repellat nisi expedita eius perspiciatis incidunt quisquam molestiae magnam, minus quo saepe provident! Consequatur odio provident praesentium magnam natus quisquam ratione inventore quo saepe blanditiis labore enim earum corrupti quaerat quod, amet sit ipsum doloremque eaque deserunt quibusdam nulla. Numquam facere, quidem facilis atque culpa saepe.
+                </div>
+            </div>
+        </div> <hr>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <img src="https://raw.githubusercontent.com/arunkudiyal/tfa-fed/master/HTML/images/mochi.jpg" alt="">
+                </div>
+                <div class="col-xs-4">
+                    <img src="https://raw.githubusercontent.com/arunkudiyal/tfa-fed/master/HTML/images/mochi.gif" alt="">
+                </div>
+                <div class="col-xs-4">
+                    <img src="https://github.com/arunkudiyal/tfa-fed/blob/master/HTML/images/mochi.png?raw=true" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 400px"></div>
+</body>
+</html>
