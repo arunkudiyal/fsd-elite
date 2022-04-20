@@ -331,57 +331,143 @@
 
 
 // ARRAY OF OBJECTS (AoO)
-const persons = [
-    {
-        name: 'User - 1', 
-        age: 40, 
-        email: 'john.doe@hotmail.com', 
-        phone: '1234567890',
-        hobbies: ['Watch TV', 'Playing soccer', 'Listening to Music'],
-        address: {
-            houseNo: 124,
-            street: 'Lane 2',
-            city: 'Hyderabad',
-            state: 'Telangana',
-            country: 'India'
-        }
-    }, 
-    {
-        name: 'User - 2', 
-        age: 40, 
-        email: 'john.doe@hotmail.com', 
-        phone: '1234567890',
-        hobbies: ['playing basketball', 'playing chess', 'playing badminton'],
-        address: {
-            houseNo: 124,
-            street: 'Lane 2',
-            city: 'Chennai',
-            state: 'Tamil Nadu',
-            country: 'India'
-        }
-    }, 
-    {
-        name: 'User - 3', 
-        age: 40, 
-        email: 'john.doe@hotmail.com', 
-        phone: '1234567890',
-        hobbies: ['singing', 'dancing', 'sleeping'],
-        address: {
-            houseNo: 124,
-            street: 'Lane 2',
-            city: 'Bangalore',
-            state: 'Karnataka',
-            country: 'India'
-        }
-    }
-]
+// const persons = [
+//     {
+//         name: 'User - 1', 
+//         age: 40, 
+//         email: 'john.doe@hotmail.com', 
+//         phone: '1234567890',
+//         hobbies: ['Watch TV', 'Playing soccer', 'Listening to Music'],
+//         address: {
+//             houseNo: 124,
+//             street: 'Lane 2',
+//             city: 'Hyderabad',
+//             state: 'Telangana',
+//             country: 'India'
+//         }
+//     }, 
+//     {
+//         name: 'User - 2', 
+//         age: 40, 
+//         email: 'john.doe@hotmail.com', 
+//         phone: '1234567890',
+//         hobbies: ['playing basketball', 'playing chess', 'playing badminton'],
+//         address: {
+//             houseNo: 124,
+//             street: 'Lane 2',
+//             city: 'Chennai',
+//             state: 'Tamil Nadu',
+//             country: 'India'
+//         }
+//     }, 
+//     {
+//         name: 'User - 3', 
+//         age: 40, 
+//         email: 'john.doe@hotmail.com', 
+//         phone: '1234567890',
+//         hobbies: ['singing', 'dancing', 'sleeping'],
+//         address: {
+//             houseNo: 124,
+//             street: 'Lane 2',
+//             city: 'Bangalore',
+//             state: 'Karnataka',
+//             country: 'India'
+//         }
+//     }
+// ]
 
-// console.log(persons);
-// console.log(persons[2].hobbies[1])
+// // console.log(persons);
+// // console.log(persons[2].hobbies[1])
 
-// To convert AoO into JSON
-const jsonData = JSON.stringify(persons)
-console.log(jsonData);
+// // To convert AoO into JSON
+// // const jsonData = JSON.stringify(persons)
+// // console.log(jsonData);
 
-const jsData = JSON.parse(jsonData)
-console.log(jsData);
+// // const jsData = JSON.parse(jsonData)
+// // console.log(jsData);
+
+// function add() {
+//     let a = 100
+//     let b = 200
+//     let c = a + b;
+//     console.log(c);
+// }
+
+// function addTwo(a ,b) {
+//     if(typeof(a) === 'number' && typeof(b) === 'number') {
+//         let c = a + b
+//         console.log(c);
+//     }
+// }
+
+// function addThree(a ,b) {
+//     if(typeof(a) === 'number' && typeof(b) === 'number') {
+//         let c = a + b
+//         // console.log(c);
+//         return c
+//     }
+// }
+
+// add()
+// addTwo(25, 49)
+
+// let ans = addThree(10, 35)
+// console.log(ans);
+
+
+// let sub = (a, b) => {
+//     if(typeof(a) === 'number' && typeof(b) === 'number') {
+//         c = a - b
+//         return c
+//     }
+// }
+
+// let ans = sub(100, 20)
+// console.log(ans)
+
+// function pow(base, exp) {
+    // return Math.pow(base, exp)
+// }
+
+// const pow = ( base, exp ) => Math.pow(base, exp)
+// const pow = ( base, exp ) => typeof base === 'number' && typeof exp === 'number' ? Math.pow(base, exp) : -1
+
+// const result = pow(20, 2)
+// console.log(result);
+
+// const add = (a, b) => {
+//     c = a + b
+//     console.log(c)
+// }
+
+// setTimeout(() => add(500, 200), 2000)
+
+// const arr = [ 'Mango', 'Apple', 'Pineapple' ]
+// const myObj = { fruit1: 'Some Fruit', fruit2: 'Some Other Fruit' }
+
+// const merge = (arr, myObj) => {
+//     // console.log(arr);
+//     // console.log(myObj);
+//     myObj.fruit1 = arr[0]
+//     myObj.fruit2 = arr[1]
+//     console.log(myObj);
+// }
+
+// merge(arr, myObj)
+
+// var fun = () => {
+    // var a = 100
+    // var b = 200
+//     console.log(a , b)
+// }
+
+if(true) {
+    const a = 100
+    const b = 200
+    console.log(a , b)
+} else {
+    const a = 500
+    const b = 500
+    console.log(a , b)
+}
+// console.log(a , b)
