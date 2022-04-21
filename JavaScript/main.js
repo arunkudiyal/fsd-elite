@@ -461,13 +461,105 @@
 //     console.log(a , b)
 // }
 
-if(true) {
-    const a = 100
-    const b = 200
-    console.log(a , b)
-} else {
-    const a = 500
-    const b = 500
-    console.log(a , b)
-}
+// if(true) {
+//     const a = 100
+//     const b = 200
+//     console.log(a , b)
+// } else {
+//     const a = 500
+//     const b = 500
+//     console.log(a , b)
+// }
 // console.log(a , b)
+
+
+// for( let i=1; i <= 10; i+=1 ) {
+//     console.log(i)
+// }
+
+// let j = 1
+// while(j <= 5) {
+//     console.log(j)
+//     j+=1
+// }
+
+// PRINT A TABLE OF 8
+// for(let i=8; i <= 80; i+=8) {
+//     // console.log(`8 x ${i/8} = ${i}`);
+//     // console.log('8 x ' + i/8 + ' = ' + i);
+//     console.log(`8 x ${i/8} = ${i}`);
+// }
+
+// const square = a => a*a
+
+// const result = square(3)
+// console.log(result);
+
+const notes = [
+    {id: 1, name: 'Note - 1', body: 'Note - 1 Body', year: 1980},
+    {id: 2, name: 'Note - 2', body: 'Note - 2 Body', year: 2001},
+    {id: 3, name: 'Note - 3', body: 'Note - 3 Body', year: 1999},
+    {id: 4, name: 'Note - 4', body: 'Note - 4 Body', year: 1997},
+    {id: 5, name: 'Note - 5', body: 'Note - 5 Body', year: 1967},
+    {id: 6, name: 'Note - 6', body: 'Note - 6 Body', year: 1921},
+    {id: 7, name: 'Note - 7', body: 'Note - 7 Body', year: 1947},
+    {id: 8, name: 'Note - 8', body: 'Note - 8 Body', year: 1937},
+    {id: 9, name: 'Note - 9', body: 'Note - 9 Body', year: 1950},
+    {id: 10, name: 'Note - 10', body: 'Note - 10 Body', year: 2000}
+]
+
+const ages = [12, 14, 19, 20, 25, 8, 21, 16, 71, 7, 22, 50, 42, 47, 69, 29]
+
+const strings = ['B', 'A', 'D', 'C', 'I', 'J', 'E', 'B', 'S', 'a']
+
+// for(let i = 0; i < notes.length; i++) {
+//     console.log(notes[i].body)
+// }
+
+// setTimeout( () => add(500, 200), 2000 )
+
+// 1. forEach
+// notes.forEach( (note, index) => index%2 !== 0 ? console.log(note) : -1)
+
+// 2. filter
+// const arr = notes.filter( note => note.id === 10 )
+// console.log(arr)
+
+// const canDrink = ages.filter(age => age === 21)
+// console.log(canDrink);
+
+// const noteBody = notes.map( note => note.body )
+// console.log(noteBody)
+
+// console.log(ages);
+
+// const sortedAges = ages.sort( (a, b) => a - b )
+// console.log(sortedAges);
+
+// const sortedAges = ages.sort( (a, b) => {
+//     if( a < b ) {
+//         return -1
+//     } else if(a === b) {
+//         return 0
+//     } else {
+//         return +1
+//     }
+// })
+
+// const sortedStrings = strings.sort( (a, b) => {
+//     if( a < b ) {
+//         return -1
+//     } else {
+//         return +1
+//     }
+// })
+
+// console.log(sortedAges)
+// console.log(sortedStrings);
+
+// const sortedStrings = strings.sort( )
+
+// console.log(sortedStrings);
+
+const addedAges = ages.reduce( (total, age) => {return total * age}, 1 )
+console.log(addedAges);
