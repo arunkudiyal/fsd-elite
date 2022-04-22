@@ -512,6 +512,30 @@ const ages = [12, 14, 19, 20, 25, 8, 21, 16, 71, 7, 22, 50, 42, 47, 69, 29]
 
 const strings = ['B', 'A', 'D', 'C', 'I', 'J', 'E', 'B', 'S', 'a']
 
+// console.log(notes)
+// console.log(notes[0].body);
+
+// for(let i = 0; i < notes.length; i+=1) {
+//     console.log(notes[i])
+// }
+
+notes.forEach( (note, index) => console.log(`${note.body} - Index : ${index}`) )
+
+// const filteredData = notes.filter( (note, index) => index%2 === 0 )
+// console.log(filteredData)
+
+const filteredNotes = notes.filter( (note, index) => note.year >= 1950 && note.year <= 1960  &&index % 2 === 0 )
+console.log(filteredNotes)
+
+const arr = notes.map( (note, index) => note.body )
+console.log(arr)
+
+// for(let i = 0; i < notes.length; i++) {
+//     if(i %2 === 0) {
+//         console.log(notes[i])
+//     }
+// }
+
 // for(let i = 0; i < notes.length; i++) {
 //     console.log(notes[i].body)
 // }
@@ -536,15 +560,16 @@ const strings = ['B', 'A', 'D', 'C', 'I', 'J', 'E', 'B', 'S', 'a']
 // const sortedAges = ages.sort( (a, b) => a - b )
 // console.log(sortedAges);
 
-// const sortedAges = ages.sort( (a, b) => {
-//     if( a < b ) {
-//         return -1
-//     } else if(a === b) {
-//         return 0
-//     } else {
-//         return +1
-//     }
-// })
+const sortedAges = ages.sort( (a, b) => {
+    if( a < b ) {
+        return -1
+    } else if(a === b) {
+        return 0
+    } else {
+        return +1
+    }
+})
+console.log(sortedAges)
 
 // const sortedStrings = strings.sort( (a, b) => {
 //     if( a < b ) {
