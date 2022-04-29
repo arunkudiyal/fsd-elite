@@ -10,8 +10,15 @@ document.all[10].textContent = 'Welcome to DOM'
 // const myDiv = document.getElementById('my-id')
 // console.log(myDiv)
 
-const listItems = document.getElementsByClassName('list-group-item')
-console.log(listItems);
+// const listItems = document.getElementsByClassName('list-group-item')
+// console.log(listItems);
+
+// for(let i=0; i < listItems.length; i++) {
+//     if(listItems[i].textContent === 'My List Item') {
+//         listItems[i].style.backgroundColor = 'black'
+//         listItems[i].style.color = 'white'
+//     }
+// }
 
 // for(let i=0; i < listItems.length; i++) {
 //     i%2 === 0 ? listItems[i].style.color = 'red' : listItems[i].style.color = 'black'
@@ -56,3 +63,16 @@ console.log(listItems);
 // document.querySelector('#text-input').addEventListener('paste', () => console.log('PASTED!'))
 
 // document.querySelector('#text-input').addEventListener('keypress', (event) => console.log(event)
+
+// const listItems = document.getElementsByClassName('list-group-item')
+// console.log(listItems)
+
+// const listItem = document.querySelectorAll('.list-group-item')
+// console.log(listItem)
+
+// EVENTS PARAMETERS
+
+document.querySelector('#submitBtn').addEventListener('click', (e) => {
+    e.preventDefault()
+    console.log( document.querySelector('#text-input').value )
+})
