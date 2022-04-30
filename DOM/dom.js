@@ -72,7 +72,27 @@ document.all[10].textContent = 'Welcome to DOM'
 
 // EVENTS PARAMETERS
 
-document.querySelector('#submitBtn').addEventListener('click', (e) => {
-    e.preventDefault()
-    console.log( document.querySelector('#text-input').value )
-})
+// document.querySelector('#submitBtn').addEventListener('click', (e) => {
+//     e.preventDefault()
+//     console.log(e)
+//     console.log( document.querySelector('#text-input').value )
+// })
+
+// document.querySelector('#container').addEventListener( 'mouseenter', 
+// (e) => {
+//         console.log(e)
+//         console.log(e.offsetX, e.offsetY)
+//         document.querySelector('#container').style.backgroundColor = `rgb( ${e.offsetX}, ${e.offsetY}, 100)`
+//         // document.querySelector('#container').style.backgroundColor = `rgb(100, 200, 300)`
+//     }
+// )
+
+// document.querySelector('#container').addEventListener( 'mouseleave', 
+// (e) => {
+//     document.querySelector('#container').style.backgroundColor = `rgb( ${e.offsetX}, ${e.offsetY}, 100)`
+// } )
+
+const container = document.createElement('div')
+container.setAttribute('id', 'my-div')
+container.textContent = 'Hello... I am a div'
+console.log(container)
