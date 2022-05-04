@@ -1,7 +1,7 @@
-console.dir(document)
+// console.dir(document)
 // console.log(document.all);
 // console.log(document.all[10])
-document.all[10].textContent = 'Welcome to DOM'
+// document.all[10].textContent = 'Welcome to DOM'
 
 // Identifier Methods
 // console.log( document.getElementById('header-title') )
@@ -141,17 +141,21 @@ document.all[10].textContent = 'Welcome to DOM'
 
 // ACCESS & MANIPULATE DOM
 
+// Accessing the value of the button
 const submit = document.querySelector('#submitBtn')
 
+// Add the click listner which user clicks when he's ready to add an Item
 submit.addEventListener('click', e => {
+    // Preventing the default behaviour of the submit button to take the form input to the action URL
     e.preventDefault()
-    
+    // Getting the typed value in the input type text
     const text = document.querySelector('#text-input').value
-
+    // Creating an li in which the text value could be appended
     const newLi = document.createElement('li')
+    // Adding the CSS style class as same as the other li
     newLi.setAttribute('class', 'list-group-item')
+    // Appending the text value to the created li
     newLi.textContent = text
-
+    // Appending the created li to the ul in DOM
     document.querySelector('ul').appendChild(newLi)
-
 })
