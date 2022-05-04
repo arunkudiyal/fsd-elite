@@ -92,7 +92,66 @@ document.all[10].textContent = 'Welcome to DOM'
 //     document.querySelector('#container').style.backgroundColor = `rgb( ${e.offsetX}, ${e.offsetY}, 100)`
 // } )
 
-const container = document.createElement('div')
-container.setAttribute('id', 'my-div')
-container.textContent = 'Hello... I am a div'
-console.log(container)
+
+// DOM TRAVERSALS
+
+// How to access the parent of any element
+// const header = document.querySelector('#main-header')
+
+// const heading = document.querySelector('#header-title')
+
+// console.log( header.parentElement )
+
+// console.log(heading.parentElement)
+
+// How to access the children of any element
+// const mainDiv = document.querySelector('#main')
+// console.log(mainDiv.children)
+
+// const ul = document.querySelector('ul')
+// console.log( ul.firstElementChild )
+// console.log( ul.lastElementChild )
+
+// How to access the siblings of any element
+// const firstLi = document.querySelector('#first-li')
+// console.log( firstLi.nextSibling ) -- DONOT USE - RETURNS TEXT
+
+// const firstLi = document.querySelector('#first-li')
+// console.log( firstLi.nextElementSibling )
+
+// const secondLi = document.querySelector('#second-li')
+// console.log( secondLi.previousElementSibling )
+
+// console.log( firstLi.previousElementSibling )
+
+// console.log( document.querySelector('#seventh-li').nextElementSibling )
+
+// createElement('nameOfTheElement')
+
+// const myLi = document.createElement('li')
+// myLi.textContent = 'Item 8'
+// myLi.setAttribute('class', 'list-group-item')
+// myLi.setAttribute('id', 'eight-li')
+
+// // Add the li to the ul
+// document.querySelector('#items').appendChild(myLi)
+
+// console.log( myLi )
+
+
+// ACCESS & MANIPULATE DOM
+
+const submit = document.querySelector('#submitBtn')
+
+submit.addEventListener('click', e => {
+    e.preventDefault()
+    
+    const text = document.querySelector('#text-input').value
+
+    const newLi = document.createElement('li')
+    newLi.setAttribute('class', 'list-group-item')
+    newLi.textContent = text
+
+    document.querySelector('ul').appendChild(newLi)
+
+})
