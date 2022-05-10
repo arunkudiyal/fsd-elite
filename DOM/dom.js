@@ -1,7 +1,7 @@
 // console.dir(document)
 // console.log(document.all);
 // console.log(document.all[10])
-// document.all[10].textContent = 'Welcome to DOM'
+document.all[10].textContent = 'Welcome to DOM'
 
 // Identifier Methods
 // console.log( document.getElementById('header-title') )
@@ -158,4 +158,20 @@ submit.addEventListener('click', e => {
     newLi.textContent = text
     // Appending the created li to the ul in DOM
     document.querySelector('ul').appendChild(newLi)
+})
+
+// console.dir(document)
+
+// document.querySelector('#header-title').addEventListener('click', () => console.log('CLICK'))
+
+// document.querySelector('#text-input').addEventListener('keydown', (e) => console.log(e))
+
+console.log(document.querySelector('#header-title').parentElement.parentElement)
+
+console.log(document.querySelector('#main').children[1].firstElementChild)
+
+
+document.querySelector('li').addEventListener('click', () => {
+    document.querySelector('#items').parentElement.style.backgroundColor = 'black'
+    document.querySelector('#items').parentElement.style.color = 'white'
 })
