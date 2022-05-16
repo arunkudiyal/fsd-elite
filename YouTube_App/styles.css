@@ -1,0 +1,11 @@
+#cont {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cont-item {
+    width: 23%;
+    height: auto;
+    margin: 10px;
+}

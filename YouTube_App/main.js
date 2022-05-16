@@ -13,44 +13,20 @@ document.querySelector('#search').addEventListener('click', (e) => {
             console.log(response)
             // Create Elemets and Put in the HTML
             let output = ''
-            for(let i=0; i < 48; i+=4) {
+            response.items.forEach(item => {
                 output += `
-                <div class="row">
-                    <div class="col-xs-3">
-                        <a href="https://www.youtube.com/watch?v=${response.items[i].id.videoId}">
-                            <img style="width: 100%" src=${response.items[i].snippet.thumbnails.high.url} />
+                    <div class="cont-item">
+                        <a href="https://www.youtube.com/watch?v=${item.id.videoId}">
+                            <img style="width: 100%" src=${item.snippet.thumbnails.high.url} />
                         </a>
-                        <h3>${response.items[i].snippet.title}</h3>
-                        <small>${response.items[i].snippet.description}</small>
+                        <h3>${item.snippet.title}</h3>
+                        <small>${item.snippet.description}</small>
                     </div>
-                    <div class="col-xs-3">
-                        <a href="https://www.youtube.com/watch?v=${response.items[i+1].id.videoId}">
-                            <img style="width: 100%" src=${response.items[i+1].snippet.thumbnails.high.url} />
-                        </a>
-                        <h3>${response.items[i+1].snippet.title}</h3>
-                        <small>${response.items[i+1].snippet.description}</small>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="https://www.youtube.com/watch?v=${response.items[i+2].id.videoId}">
-                            <img style="width: 100%" src=${response.items[i+2].snippet.thumbnails.high.url} />
-                        </a>
-                        <h3>${response.items[i+2].snippet.title}</h3>
-                        <small>${response.items[i+2].snippet.description}</small>
-                    </div>
-                    <div class="col-xs-3">
-                        <a href="https://www.youtube.com/watch?v=${response.items[i+3].id.videoId}">
-                            <img style="width: 100%" src=${response.items[i+3].snippet.thumbnails.high.url} />
-                        </a>
-                        <h3>${response.items[i+3].snippet.title}</h3>
-                        <small>${response.items[i+3].snippet.description}</small>
-                    </div>
-                </div>
-            `
-            }
+                `
+            })
             
-            document.querySelector('#my-container').innerHTML += output
+            document.querySelector('#cont').innerHTML += output
         }
     }
-
     xhr.send()
 })
